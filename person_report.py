@@ -280,7 +280,7 @@ if __name__ == '__main__':
     parser.add_argument('--algorithm',type=str,help="Algorithm to use",
                         required=False,choices=('chat','assignment','events'),default='events')
     
-    parser.add_argument('--full',help="Algorithm to use",action='store_const',
+    parser.add_argument('--full',help="Full report: consider even open cases",action='store_const',
                         const=True, default=False, required=False)
     
 
