@@ -1,0 +1,7 @@
+[DEFAULT]
+host=127.0.0.1
+user=bugzilla
+passwd=XXXPASSWORDXXX
+port=3306
+db=bugzilla
+
