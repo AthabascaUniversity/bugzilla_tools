@@ -198,11 +198,13 @@ def printEvents(el,bl,pi):
     sorted_bugs.sort()
     avg_delays=[]
     median_delays=[]
+    events_counter=0
     for bug in sorted_bugs:
         print "=====> ",bug,bug_mapping[bug]
         last_assigned=None
         cumulative_delay=0
         delays=[]
+        events_counter=events_counter+len(el[bug])
         for be in el[bug]:
             relevant=False
             cumulative_delay=cumulative_delay+be['delay']
@@ -253,6 +255,7 @@ def printEvents(el,bl,pi):
     print "=== TOTALS ==="
     print "Overall avg delay: ",str(datetime.timedelta(seconds=overall_avg))
     print "Overall median delay: ",str(datetime.timedelta(seconds=numpy.median(avg_delays)))
+    print "Events: ",events_counter
 
 
 
