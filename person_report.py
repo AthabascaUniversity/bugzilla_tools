@@ -8,13 +8,13 @@ import datetime,time
 import ConfigParser
 import numpy
 
-# select userid from profiles where login_name='X@athabascau.ca';
+# select userid from profiles where login_name='X@place.org';
 # userid
 # ------
-# 137
+# 13
 # ------
-# select distinct(bug_id) from longdescs where who=137;
-# select distinct(bug_id) from bugs_activity where who=137;
+# select distinct(bug_id) from longdescs where who=13;
+# select distinct(bug_id) from bugs_activity where who=13;
 
 class PersonInfo:
     login_name=None
